@@ -1,0 +1,30 @@
+{
+  "name": "em-node-framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "framework",
+    "cli",
+    "command-line",
+    "em-node-framework",
+    "express"
+  ],
+  "author": "Falgun Shah <falgunshah7@gmail.com>",
+  "license": "MIT",
+  "description": "A Node.js framework for building command-line applications with ease.",
+  "bin": {
+    "em-node-framework": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/falgunshah7/em-node-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/falgunshah7/em-node-framework/issues"
+  },
+  "homepage": "https://github.com/falgunshah7/em-node-framework#readme"
+}
