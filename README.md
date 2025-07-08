@@ -15,7 +15,7 @@ A lightweight, modular Node.js framework for building scalable server-side appli
 - Middleware support (body-parser, dotenv)
 - MongoDB connection helper
 - Git & README auto-generated
-- Ready-to-use scripts for dev, start, seeder
+- Ready-to-use scripts for dev, start
 
 ---
 
@@ -57,8 +57,7 @@ your-project-name/
 ├── routes/
 │   └── index.js
 ├── services/
-├── seeders/
-│   └── index.js
+│   └── user.service.js
 ├── .env
 ├── .env.example
 ├── index.js
@@ -69,17 +68,22 @@ your-project-name/
 
 ## 🔁 Routing Example
 
-Define your routes inside routes/index.js and connect to controller functions:
+Define your routes inside routes/index.js
 
 ```js
-const express = require("express");
-const router = express.Router();
+module.exports = (app) => {
+  app.use(`${baseRoute}/users`, require("./user.route"));
+};
+```
+
+Create your routes inside routes/user.route.js and connect to controller functions:
+
+```js
 const userController = require("../controllers/user.controller");
 
-router.get("/users", userController.getUsers);
-router.post("/users", userController.createUser);
+routes.post("", userController.create);
 
-module.exports = router;
+routes.get("", userController.read);
 ```
 
 ### 🛠 Available Scripts
