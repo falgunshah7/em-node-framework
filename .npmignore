@@ -1,4 +1,33 @@
-test/
-.gitignore
+# Exclude template files (used only during scaffolding)
+template/
+
+# Exclude test and dev folders
+tests/
+__tests__/
+examples/
+coverage/
+scripts/
+
+# Exclude env files
+.env
+.env.example
+
+# Exclude config and IDE/editor files
+.vscode/
 *.log
-*.zip
+*.env
+*.DS_Store
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+# Exclude git-related files
+.git
+.gitignore
+
+# Exclude documentation
+README.md
+LICENSE
+
+# Exclude node_modules (users will install their own)
+node_modules/

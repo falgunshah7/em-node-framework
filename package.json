@@ -2,8 +2,12 @@
   "name": "em-node-framework",
   "version": "1.0.0",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm version patch && npm publish --access public"
   },
   "keywords": [
     "node",
