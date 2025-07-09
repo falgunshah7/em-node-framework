@@ -3,11 +3,13 @@
   "version": "1.0.2",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "template/"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "npm version patch && npm publish --access public"
+    "release": "npm version patch && npm publish --access public",
+    "prepublishOnly": "node prepublish-check.js"
   },
   "keywords": [
     "node",

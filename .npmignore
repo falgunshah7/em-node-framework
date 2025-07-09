@@ -1,6 +1,3 @@
-# Exclude template files (used only during scaffolding)
-template/
-
 # Exclude test and dev folders
 tests/
 __tests__/
